@@ -11,7 +11,7 @@ def indexfaperta(request):
     penjelasan3 = "Prodi Perikanan merupakan suatu upaya turut sertanya Faperta Untirta dalam menunjang pembangunan nasional dan daerah terutama pengembangan sumberdaya manusia (SDM) di sektor perikanan."
     prodi4 = "Teknologi Pangan"
     penjelasan4 = "Program pengembangan di Program studi Teknologi Pangan adalah melaksanakan tridharma perguruan tinggi dan menyelenggarakan program studi yang berkualitas dalam pengembangan IPTEK pangan berbasis sumber daya lokal untuk mendukung Food Security."
-
+    
     konteks = {
         'tentang' : tentang,
         'penjelasan1' : penjelasan1,
@@ -19,8 +19,10 @@ def indexfaperta(request):
         'jurusan2' : prodi2,
         'penjelasan2' : penjelasan2,
         'jurusan3' : prodi3,
-        'penjelasan3' : penjelasan4,
+        'penjelasan3' : penjelasan3,
         'jurusan4' : prodi4,
         'penjelasan4' : penjelasan4,
+
     }
+    
     return render(request, 'faperta.html', konteks)
